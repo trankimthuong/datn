@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ControlActivity">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="5dp"
+        android:hint="Write a string" />
+    <Button
+        android:id="@+id/sendstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/send"
+        android:minWidth="200dp"/>
+
+    <Button
+        android:id="@+id/receiver_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="status"
+        android:minWidth="200dp"/>
+    <Button
+        android:id="@+id/sendfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="send file"
+        android:minWidth="200dp"/>
+    <!--Button: Disconnect-->
+    <Button
+        android:id="@+id/control_led_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/disconnect"
+        android:minWidth="200dp"/>
+
+    <TextView
+        android:id="@+id/ketqua"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
